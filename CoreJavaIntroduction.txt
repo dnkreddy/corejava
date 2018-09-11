@@ -1,2 +1,0 @@
-Java is a Simple High level Object oriented Programming language.
-Java is Robust programming language.

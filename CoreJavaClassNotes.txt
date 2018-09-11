@@ -1,0 +1,744 @@
+Core Java:
+
+What is Java?
+
+Java is a simple,platform indenpendent, object oriented 
+high level programming Language. 
+
+Language: medium for communication
+Programming: its a set of instruction to machine to 
+perform any task.
+
+ProgrammingLanguage: grammatical rules or syntax which needs 
+to be followed to write instructions to a machine.
+
+LowLevelProgramming Language:this PL uses binary digits(0,1)
+for coding.
+Drawbacks:
+difficult to write,debug the code.
+
+Medium Level PL:In this programming introduces some functions
+SUM,DIV,MOV etc
+We can call this PL as Assembly language.Here we need assembler
+to covert this program to machine understandable code.
+
+Drawbacks:
+Assembler is processor dependent 
+and getting processor is expensive.
+
+HighLevel PL:In this PL they have defined simle human 
+understandable english words.It is simple PL.
+
+Features of Java:
+1. Simple
+2. Platform Independent
+3. Object Oriented
+4. Secure
+5. Robust
+    1. Memory management 
+	2. No pointers
+6. MultiThreading
+
+Java is Platform Independent:
+Execution model in C and Java:
+
+SourceCode: its nothing  but .java file which were 
+written by developer
+
+Bytecode: Once we compile .java file it converts to
+.class file ,this file consist of Byte code.
+Bytecode is nothing but some magic value which is not human
+readable format.
+
+NativeCode:Machine understandable code
+
+Javacompiler: java compiler is utility program develped
+in native languages(c or c++) and it named as javac,which converts .java to .class file
+1. First it verfies the syntax of a code.
+2. then it converts .java to .class files
+
+JavaInterpreter:it is utility program developed in c or c++
+which coverts byte code to native code  and named as java.
+It converts line by line to native code.
+
+JIT compiler :Just in Time compiler converts your byte code 
+to native as parts.
+
+
+JDK:java development kit
+It consist of some tools and libraries to develop 
+and execute your java program.JDK is platform dependent.
+
+JDK = JRE+JVM
+
+
+JRE:Java Runtime Env:It consist of libraries to excute a 
+java program
+
+
+JVM:Java Virtual machine:It is specification set by sun micro
+systems.It is an instance of JRE.The actula implementation
+of JVM is JRE.
+
+History of Java:
+1.In 1990s java was intiated by sun micro systems to develop
+programming language where they can develop programs for
+home appliances ex: TV setup box.
+2. Later because of features of java it became famous for 
+internet programming.
+3. Father of java is James Gosling and team.
+4. Intially they named java as OAK later named to Java bcs
+OAK is already registered by OAK Technologies.
+
+1995 - java alpha & beta
+1996  - java 1.0
+1997  - java 1.1
+1998  - java 1.2
+2000  - java 1.3
+2002    java 1.4
+2004    java 1.5 (Tiger)
+2006    java 1.6
+2011    java 1.7
+2014    java 1.8
+2017    java 1.9
+
+Installation:
+
+PathSetting:
+
+
+Identifiers:
+
+Keywords:
+keywords are reserved words in java
+Each keyword has some specific purpose
+All keywords are defined in lowercase
+We cannot use keywords as Identifiers
+
+Keywords - 50 keywords   
+ReserverdLiterals: true,false,null - literals
+
+java 1.2 - 49 keywords
+java 1.5 - 1 keyword(enum)
+
+DataTypes(8):
+byte, short,char,int, long, float,double,boolean
+
+class&Objects(9):
+
+class,interface,extends,implements, super,this,new,enum,
+instanceof
+
+AccessSpeicifiers(3): public ,private,protected
+
+Modifiers(9) - 
+ final,native,static,abstract,synchronized,
+ transient,volatile,const,strictfp
+
+ Flowcontrol(12):
+ 
+ if,else,while,do,for,switch,case,break,continue,return,
+ goto,default
+ 
+ Exceptions(6):
+ 
+ try, catch,finally,throw,throws,assert
+ 
+ packages(2):
+ package import
+ 
+ others(1):
+ void
+ 
+ 
+ 
+ Datatypes:
+ 
+ 1. The type of data your are using in your program
+ 2. Memory allocation
+ 
+ Primitive Datatypes:
+ 
+ byte	1	8	0	-2pow(7)  2pow(7)-1
+ 
+ 
+ Nonprimitive Datatypes or UserDefined datatypes:
+ Class type,Interface type,enum type,Annotaion type etc
+ class A{
+ 
+ }
+ 
+ Variables::
+ 
+ Variable:It is nothing but a container which
+ holds user input or any data.
+ 
+ Primitive Variables:
+ int age;
+ 
+ 
+ Reference Variables:
+ A a;
+ 
+ Based on Scope:
+ 
+ 1. Instance variables - A variables defined inside a clas 
+ without static keyword
+ 2. Static variables - A variable define with static keyword
+ 3. Local variables - A variable defined inside a block or constructor
+ or method
+ 
+ Constants:
+ 
+    final int age =9;
+	age = 20;
+	
+Literals:
+
+1.Boolean Literals: value assigned to boolean variable
+  true/false
+2.Character Literals : value assigned to char variable
+  65 \t 'A'  \101 \u0041
+  char c = 65;
+  char c = 'A';
+  char c = '\t'; \n \t \r \b \f \' \" \\
+  char c = '\101';
+  char c = '\u0041';
+3. String Literals - group of zero or more characters
+   enclosed in double quotes
+   String name = "Naveen";
+4. Integer Literals - value assigned to any one of the 
+   Integral datatypes(byte,short,int,long).
+   default type is int  
+   Decimal Literal:value from Decimal system
+    Base is 10 and allowed digits 0-9
+	int age = 30;
+   Ocatal Literal : value represented in Octal System.
+    Base of Octal is 8 and allowed digits 0-7
+	starts with 0;
+	int age = 0101;
+   HexaDecimal : value represnted in hexaDecimal system.
+    Base is 16 and allowable digits 0-15
+     0-9ABCDEF
+     starts with 0x0041
+   Binary Literal : value reprented in binarySystem
+   Base of binary system is 2.allowable digits 0-15
+   int age = ob101;   
+5. Floating Literals - value assigned to one of the foating
+   datatypes.
+   Default type double.
+    1. Standard :
+	  float f = 10.23f/F;
+	2. Exponential:
+    float f = 10.23e3f; 10.23*10pow(3)f;	
+6. Null Literals - null is a value assigned to reference variables.
+	Person p = null;
+	String name;
+	
+Operators:Operators are used to perform some operations on
+operands
+int a = 10;
+int b = 20;
+Ex : a+b
+
+Based on operands Operators are divided into 3 types:
+
+Unary  - 1 operand
+Binary - 2 operans
+Ternary - 3 operands
+
+Based on Opeartions:
+1. Arithmetic Opertators:(+,-,*,/,%)
+     UnaryArithmetic Opertors(+,-)
+	 Binary ArithimeticOperators
+	  int a = 10;
+	  System.out.println(+a);
+	  ***The result type of any arithmetic expression is int
+	 
+	  byte
+	   
+	   short
+	   
+	   char
+	   
+	   int
+	   
+	   long  float double
+	   
+	   resultType = max(int,type of operands)
+
+	   String Concatenation Operator:
+	   
+	   + : 10+20 - Arithmetic Expression - result int type
+	        ""+40 - 40 - result String type 
+
+2. Assignement Operators
+     - Simple
+	   int a = 10;
+	   <Operand1> = <Operand2>
+	   int c = 20;
+	   int d = 30;
+	      c = d;
+		  
+	  Operands should be compatible types.
+       TypeCasting :
+          Implicit 
+          Explicit
+        Widening:
+        Narrowing:		
+		  
+	 -Compund Assignemnt Operator:
+	  int b = 10;
+	  b= b+20;
+3. String concatenation Opertors
+4. Increment and Decrement operators
+
+6. Relational Operators
+7. Logical Operators
+5. Condtional or Ternary Operator
+8. new Operator
+9. instanceof operator
+10. Bitwise Operators
+
+Flow controls:
+ 
+ 1. Conditional control staements
+     if
+	 if else
+	 switch
+ 2. Looping control or Iterative control statments
+    for
+    Enhanced for loop or For each
+    while
+    do while
+ 3.Unconditional control stements
+   break
+   continue
+ 	
+
+Arrays:
+1-D Array
+2-D Array
+
+
+OOPs concepts:
+Programming models:
+OOps:
+class :
+Object:
+class Members:
+Variables
+Blocks
+constructors
+Methods
+Innerclasses
+
+variable :
+Variable is a container which holds the data.
+Memory will be allocated at the time of object creation.
+Any number of times we can assign values
+
+Based on types:
+Primitive variables
+Non-Primitive or Reference Variables
+Based on Scope:
+Instance variables
+Static variables
+Local Variables
+
+Instance Variables:Variables defined inside a class
+without static keyword.
+
+Static Variables :Variables defined inside a class 
+with static keyword.
+
+Local Variables:Variables defined insided the members of a 
+class like block,constructor or methods.
+
+Blocks:Block is a set of instructions enclosed in curly braces
+
+InstanceInstailizationBlock:
+Block defined without static keyword.
+StaticInitializationBlock:
+Block defined with static keyword.
+Local Block:
+Block defined inside members of class.
+
+Constructor:constructor is a special method whose name 
+is same as class name and used for initialization purpose.
+JVM will excute the constructors.
+At the time of Object creation constructor gets executed.
+Constructor will not have return type and even void.
+
+class A{
+
+   A(){
+   
+   }
+
+}
+
+Two types:
+Default constructor or zero arguments constructor
+Parameterized constructor
+Constructor overloading
+Constructor chaning
+
+this keyword:it is instance which hold reference of current object
+to invoke one constructor to another
+to invoke methods
+to invoke variables
+
+Methods:provides behaviour or operation or functinality of an object
+
+Types:
+Instance method : Method defined with out static keyword
+We can invoke instance method with the object or instance of class
+static method  : Methods defined with static keyword
+1. we can invoke with class Name
+2. with variable reffered by null value.
+3. with variable which contains reference of object.
+
+class = state+behaviour
+
+return type:
+Arguments:
+this keyword:
+call by value/callbyreference
+
+MethodOverloading:
+VarArgs:
+Inheritence:
+1.It is a process if writing new class by inheriting common
+data and operations from other class.
+2. code reusability
+3. Class from where we are inheriting is called as base or parent class
+4. New class we will as child class 
+5. we will use extends keyword to implement inheritence
+
+class A{
+
+}
+class B extends A{
+}
+
+Types of Inheritence:
+1. Simple
+2. MultiLevel
+3. Hierarchichal 
+4. Multiple
+5. Hybrid
+
+Inheritence with blocks:
+Inheritence with constructors:
+super keyword:
+packages:
+AccessModifiers:
+private - private scope`
+default - default scope
+protected - protected
+public - public scope
+Method Overriding:
+1. CodeReusability
+2. ReImplementation
+3. Inheritence
+
+class A{
+  
+  public int print(String name){
+  
+  }
+   public int print(String name,int age){
+  
+  }
+}
+
+class B extends A{
+  public int print(String name){
+  }
+}
+
+Method Signature:
+1. Method signature should be same.
+2. In case of if return type is class type,then sub class 
+   method should have the class or sub class of that class
+3. Exceptions:
+    checkedExceptions:
+	1. If super class method is throwing checkedExceptions,
+	 a. Then subclass method can ignore throwing checkedException.
+	 b. subclass method can throw the same exception or subclass 
+	 of checked Exception or it can throw any unchecked Exception
+	 
+	2. Unchecked Excption:
+   1. If super class method is throwing uncheckedExceptions,then
+    a. subclass method can ignore throwing the excpections 
+    b. Subclass method can throw any type of unchecked exception
+    c. subclass mehthod should not throw any checked Exception.	
+4. AccessModifiers visibility cannot reduce
+5. if we make method final we can,t override.
+
+Polymorphism:
+Examples of Polymorphism:
+MethodOverLoading - static or compile time polymorphism
+MethodOverriding  - Dynamic or Runtime
+
+Abstract:
+Interfaces:
+
+Innerclasses:
+A class defined in another class or grouping logical related
+classes together
+
+class person{
+  int age;
+  long phoneNo;
+  Address addr;
+   class Address{
+  String city;
+  int pincode;
+  long resPhoneNo;
+ }
+}
+
+1. Regular Inner class
+2. Method Local Inner class
+3. Anonymous Inner class
+4. Static Inner class
+
+java.lang package:
+
+Object class methods:
+getclass()
+hashcode();
+toString()
+equals();
+clone()
+finalize()
+
+Cloning - To create a copy of an existing object.
+shallow cloning:Default cloning
+Deep cloning:
+
+java.lang.String:
+final class
+implementing Serializable,Comparable and CharSequence 
+String is Immutable class 
+ways of creating String Objects:
+1. using new keyword
+2. using String literal
+
+String s = new String();
+String s1 = new String("Lavi");
+
+String s2 = "Lavi";
+
+
+java.lang.StringBuffer:
+java.lang.StringBuilder:
+
+C:/Program Files/Java/jdk1.7.0_25/bin/javaw.exe
+
+Wrapperclasses:
+
+int x = 10;
+int y  =20;
+Integer i1 = new Integer(x);
+Integer i2 = new Integer(y);
+Add.add(i1,i2);
+class Add{
+static int add(Integer i1,Integer i2){
+    Integer res = i1+i2;
+	return res.intValue();
+}
+}
+
+Wrapper classes:
+1. Primitive to Wrapper object
+   constructor
+   valueOf
+2. Wrapper Object to primitive
+   xxxValue(); xxx - any primitivetype
+3. String to WrapperObject
+   constructor
+   valueOf()
+4. Wrapper to String
+   toString() in wrapperObject
+5. primitive to String
+   concatenation
+   String.valueOf()
+   wrapper Object toString()
+6. String to Primitive
+   parsexxx(); xxx - any primitive
+
+   
+System:
+Runtime
+Math
+BigInteger
+BigDecimal
+DesignPattern:
+SingletonDesignPattern:
+
+MarkerInterface:
+Immutable class:
+
+Exceptions:
+
+Object 
+
+Throwable
+
+Exception
+
+ClassNotFoundException
+CloneNotSupportedException
+NotSerializableException
+InstantiationException
+IOException
+ FileNotFoundException
+ EOFException
+
+RuntimeException 
+    ArithmeticException
+	NullPointerException
+	ArrayIndexOutOfBoundsException
+	ClassCastException
+	StringIndexOutOfBoundsException
+	NumberFormatException
+	IllegalArgumentException
+
+
+try
+catch
+finally
+
+checked and unchecked exceptions:
+
+throws
+
+CustomException:
+Exception created by developer as per project requirement.
+
+recap of MethodOverriding:
+
+Connection con = null;
+Statement stmt = null;
+
+try{
+
+con = DriverManager.getConnection(url,username,password);
+stmt = con.createStatement();
+---
+---
+---
+stmt.close();
+con.close();
+
+}
+
+try with resources:
+
+try(
+Connection con = DriverManager.getConnection(url,username,password);
+Staement stmt = con.createStatement();
+){
+
+----
+-----
+-----
+//no need to close the resources
+
+}catch(Exception e){}
+
+
+Thread:
+
+1. what is a Thread?
+2. Ways of creation of Threads.
+3. ThreadName
+4. ThreadGroup
+States of Thread:
+New
+Runnable
+    sleeping
+	waiting
+	blocking
+Running
+Dead
+5. Thread Priority(setPriority())
+6. sleep
+7. Yield
+8. join
+9. deadlock
+10. Synchronization
+11. Thread communication (wait and notify methods)
+   
+constructors in Thread:
+public Thread()
+public Thread(String name)
+public Thread(Runnable target)
+public Thread(Runnable target,String name)
+pubic Thread(ThreadGroup tg,String name)
+public Thread (ThreadGroup tg,Runnable target)
+public Thread(ThreadGroup tg,Runnable target,String name)
+
+
+Collections :
+
+
+java.io package:
+
+File
+createNewFile()
+mkdir()
+mkdirs()
+listFiles()
+listFiles(FileFilter)
+
+FileWriter
+  FileWriter(String name)
+  FileWriter(File file)
+  FileWriter(String name, boolean append)
+  FileWriter(File file,boolean append)
+
+
+Enum
+Reflection
+Annotation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

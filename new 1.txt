@@ -1,0 +1,32 @@
+JDBC:
+
+JDBC API is provided by java vendor
+
+using JDBC API needs to connect to Oracle database:
+1. Add jar file to prject 
+
+
+statement -  
+
+excuteupdate()   - int
+insert/update/delete   
+executeQuery() - ResultSet
+select 
+exceute()  - boolean
+insert/update/delete/select 
+
+String sql = "Insert into student values()";
+boolean result = stmt.excute(sql);
+if(!result)
+int count = stmt.getUpdatedcount();
+if(reslut)
+Resultset rs = stmt.getResultSet();
+
+
+PreparedStatement- 
+
+insert into student values(?,?,?,?,?);
+
+CallableStatement:
+
+

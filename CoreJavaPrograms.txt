@@ -1,0 +1,194 @@
+1.Java Program to Swapping Two Numbers Using a Temporary Variable?
+
+public class JavaSwapExample {
+
+ public static void main(String[] args) {
+  int x = 10;
+  int y = 20;
+
+  System.out.println("Before Swapping");
+  System.out.println("Value of x is :" + x);
+  System.out.println("Value of y is :" + y);
+
+  //swap the value
+  swap(x, y);
+ }
+
+ private static void swap(int x, int y) {
+  int temp = x;
+  x = y;
+  y = temp;
+
+  System.out.println("After Swapping");
+  System.out.println("Value of x is :" + x);
+  System.out.println("Value of y is :" + y);
+ }
+}
+
+2. Java Program to Find Largest and Smallest Number in an Array?
+
+public class FindLargestSmallestNumber {
+
+ public static void main(String[] args) {
+
+  //numbers array
+  int numbers[] = new int[]{55,32,45,98,82,11,9,39,50};
+
+  //assign first element of an array to largest and smallest
+  int smallest = numbers[0];
+  int largetst = numbers[0];
+
+  for (int i = 1; i<numbers.length; i++) {
+   if (numbers[i] > largetst)
+    largetst = numbers[i];
+   else if (numbers[i] < smallest)
+    smallest = numbers[i];
+  }
+
+  System.out.println("Largest Number is : " + largetst);
+  System.out.println("Smallest Number is : " + smallest);
+ }
+}
+
+3. Java Program to Find Duplicate Characters in a String?
+
+public class DuplStr {
+ public static void main(String argu[]) {
+
+  String str = "Naveen";
+  int cnt = 0;
+  char[] inp = str.toCharArray();
+  System.out.println("Duplicate Characters are:");
+  for (int i = 0; i < str.length(); i++) {
+   for (int j = i + 1; j < str.length(); j++) {
+    if (inp[i] == inp[j]) {
+     System.out.println(inp[j]);
+     cnt++;
+     break;
+    }
+   }
+  }
+ }
+}
+
+4.Java Program to Find Reverse Number?
+
+public class FindReverseNumber {
+
+ public static void main(String[] args) {
+
+  //number defined
+  int number = 1234;
+  int reversedNumber = 0;
+  int temp = 0;
+
+  while (number & gt; 0) {
+   //modulus operator used to strip off the last digit
+   temp = number % 10;
+
+   //create reversed number
+   reversedNumber = reversedNumber * 10 + temp;
+   number = number / 10;
+  }
+
+  //output
+  System.out.println("Reversed Number is: " + reversedNumber);
+ }
+}
+
+6 .Java Program to Find Factorial?
+
+public class FindFactorial {
+
+ public static void main(String[] args) {
+
+  int number = 4;
+  int factorial = number;
+
+  for (int i = (number - 1); i > 1; i--) {
+   factorial = factorial * i;
+  }
+
+  System.out.println("Factorial of " + number + " is " + factorial);
+ }
+}
+
+7.Java Program to Generate the Fibonacci Series?
+
+import java.util.Scanner;
+
+public class FibSeries {
+
+ public static void main(String[] args) {
+  int FibLength;
+  Scanner sc = new Scanner(System.in); //create object
+
+  System.out.print("Please enter length: ");
+  FibLength = sc.nextInt();
+
+  int[] num = new int[FibLength];
+  //initialized first element to 0
+  num[0] = 0;
+  //initialized second element to 1
+  num[1] = 1;
+  
+  //New number should be the sum of the last two numbers of the series.
+  for (int i = 2; i < FibLength; i++) {
+   num[i] = num[i - 1] + num[i - 2];
+  }
+
+  //Print Fibonacci Series
+  System.out.println("Fibonacci Series: ");
+  for (int i = 0; i < FibLength; i++) {
+   System.out.print(num[i] + " ");
+  }
+ }
+
+}
+
+8.Java Program to Swapping Two Numbers without Using a Temporary Variable?
+public class JavaSwapExample {
+
+ public static void main(String[] args) {
+
+  int x = 10;
+  int y = 20;
+
+  System.out.println("Before Swapping");
+  System.out.println("Value of x is :" + x);
+  System.out.println("Value of y is :" + y);
+
+  //add both the numbers and assign it to first
+  x = x + y;
+  y = x - y;
+  x = x - y;
+
+  System.out.println("Before Swapping");
+  System.out.println("Value of x is :" + x);
+  System.out.println("Value of y is :" + y);
+ }
+}
+
+9.Java Program to Print Prime Numbers?
+public class PrimeNumbers {
+
+ public static void main(String[] args) {
+
+  int num = 20, count;
+
+  for (int i = 1; i & lt; = num; i++) {
+   count = 0;
+   for (int j = 2; j & lt; = i / 2; j++) {
+    if (i % j == 0) {
+     count++;
+     break;
+    }
+   }
+
+   if (count == 0) {
+    System.out.println(i);
+   }
+
+  }
+ }
+}
